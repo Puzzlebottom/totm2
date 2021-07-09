@@ -1,0 +1,64 @@
+@use 'fundament'
+
+.grouptype-tabs-wrapper 
+  display: flex
+  position: relative
+  flex-direction: row
+  justify-content: space-between
+  height: fit-content
+  width: available
+  margin: 8px 8px 0 8px
+
+.grouptype-tab-unselected 
+  display: flex
+  position: relative
+  z-index: 1
+  overflow: hidden
+  border-top-right-radius: 8px
+  background-color: fundament.$light-grey
+  border: fundament.$border
+  border-bottom: none
+  padding: 2px 8px 2px 4px
+  margin: 0
+
+.grouptype-tab-unselected:hover 
+  background-color: fundament.$grey
+
+.grouptype-tab-selected 
+  display: flex
+  position: relative
+  z-index: 3
+  border-top-right-radius: 8px
+  background-color: fundament.$lighter-grey
+  border-top: fundament.$border
+  border-right: fundament.$border
+  border-left: fundament.$border
+  border-bottom: none
+  padding: 2px 8px 2px 4px
+  margin: 0
+
+.grouptype-window 
+  display: flex
+  flex-direction: column
+  z-index: 2
+  background-color: fundament.$lighter-grey
+  border: fundament.$border
+  margin: -1px 8px 8px 8px
+  padding: 4px
+  min-height: 486px
+
+.group 
+  display: flex
+  overflow: hidden
+  white-space: nowrap
+  justify-content: center
+  width: available
+  height: 40px
+  border: fundament.$border
+  border-radius: 3px
+  background-color: fundament.$light-grey
+  padding: 10px
+  margin: 4px
+
+.group:hover 
+  background-color: fundament.$grey

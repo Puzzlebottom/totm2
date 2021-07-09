@@ -1,0 +1,45 @@
+@use 'fundament'
+
+.condition-wrapper 
+  display: flex
+  flex-direction: row
+  margin: 0 8px 8px 8px
+  padding: 0
+  width: available
+  min-height: 523px
+
+.condition-detail-wrapper
+  display: flex
+  flex-direction: column
+  width: 65%
+
+.condition-ul 
+  width: 35%
+  height: 100%
+  overflow: hidden
+  white-space: nowrap
+  text-align: right
+  padding: 0
+  font-size: 10px
+
+
+.condition-li-inactive
+  color: fundament.$darker-grey
+
+.condition-li-inactive:hover
+  cursor: default
+  font-weight: bold
+
+.condition-li-active
+  color: black
+  font-weight: bold
+
+.condition-li-active:hover
+  cursor: default
+  font-weight: bold
+
+.condition-detail 
+  display: flex
+  background-color: white
+  font-size: 9px
+

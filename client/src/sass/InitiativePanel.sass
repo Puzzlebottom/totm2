@@ -1,0 +1,217 @@
+@use 'fundament'
+
+.previous-turn-wrapper 
+  display: flex
+  flex-direction: column
+  margin: 8px 8px 0 8px
+  padding: 0
+  width: available
+
+.previous-turn 
+  display: flex
+  z-index: 2
+  width: available
+  height: 25px
+  background-color: fundament.$lighter-grey
+  color: black
+  border: fundament.$border
+  border-radius: 3px
+  padding: 4px
+  margin: 8px 0 8px 20px
+  justify-content: center
+  align-items: center
+
+.current-turn-wrapper 
+  display: flex
+  min-height: 268px
+  margin: 0 8px 0 8px
+  padding: 0
+  width: available
+
+.upcoming-turn-wrapper 
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin: 0 8px 8px 8px
+  padding: 0
+  width: available
+
+.next-turn 
+  display: flex
+  z-index: 2
+  width: available
+  height: 25px
+  background-color: fundament.$lighter-grey
+  color: black
+  border: fundament.$border
+  border-radius: 3px
+  padding: 4px
+  margin: 8px 0 8px 20px
+  justify-content: center
+  align-items: center
+
+.current-turn 
+  display: flex
+  flex-direction: column
+  z-index: 2
+  width: 100%
+  background-color: fundament.$lighter-grey
+  color: black
+  border: fundament.$border
+  border-radius: 20px 3px 3px 3px
+  padding: 4px
+  justify-content: space-between
+
+.pre-turn-panel 
+  display: flex
+  position: relative
+  z-index: 1
+  width: 60%
+  background-color: fundament.$dark-grey
+  border: fundament.$border
+  border-bottom: none
+  border-top-right-radius: 12px
+  align-self: center
+  margin: 8px 0 0 0
+  padding: 4px
+  justify-content: center
+
+.post-turn-panel 
+  display: flex
+  position: relative
+  z-index: 1
+  width: 60%
+  background-color: fundament.$dark-grey
+  border: fundament.$border
+  border-top: none
+  border-bottom-left-radius: 12px
+  align-self: center
+  margin: 0 0 8px 0
+  padding: 4px
+  justify-content: center
+
+.current-player-title 
+  display: flex
+  position: relative
+  overflow: hidden
+  width: 75%
+  height: 10%
+  white-space: nowrap
+  justify-content: center
+  align-self: center
+  font-size: 22px
+  margin-left: 5%
+
+.status-vitals-ha-wrapper 
+  display: flex
+  flex-direction: row
+  overflow: visible
+  position: relative
+  max-height: 25%
+  align-items: center
+  margin-top: 5%
+
+.status-wrapper 
+  display: flex
+  flex-direction: column
+  position: relative
+  overflow: hidden
+  white-space: nowrap
+  margin-right: 15%
+
+.current-player-status-element 
+  display: flex
+  position: relative
+  overflow: hidden
+  white-space: nowrap
+  margin: 4px 0 4px 0
+  padding: 4px
+
+.vitals-wrapper 
+  display: flex
+  flex-direction: column
+  position: relative
+  overflow: hidden
+  white-space: nowrap
+  width: 24%
+  margin-right: 11%
+
+.vitals 
+  display: flex
+  position: relative
+  overflow: hidden
+  white-space: nowrap
+  margin: 4px 0 4px 0
+  padding: 4px
+  font-size: 20px
+
+.action-wrapper 
+  display: flex
+  justify-content: space-between
+  position: relative
+  overflow: hidden
+  white-space: nowrap
+
+.action-toggle 
+  display: flex
+  position: relative
+  height: 50px
+  width: 50px
+  font-size: 10px
+  background-color: fundament.$light-grey
+  border: fundament.$border
+  border-radius: 3px
+  justify-content: center
+  align-items: center
+
+.held-action-wrapper 
+  display: flex
+  flex-flow: column
+  position: relative
+  z-index: 3
+  width: 15%
+  height: fit-content
+  margin: -50% -10% -50% 0
+
+.held-action-flag 
+  display: flex
+  position: relative
+  background-color: fundament.$darker-grey
+  border: fundament.$border
+  border-bottom-left-radius: 50%
+  border-top-left-radius: 50%
+  justify-content: center
+  align-items: center
+  padding: 4px
+  margin: 4px 0 4px 0
+  font-size: 10px
+
+.initiative-marker 
+  display: flex
+  position: relative
+  align-items: center
+  justify-content: center
+  top: 26px
+  left: 20px
+  z-index: 3
+  height: 40px
+  width: 40px
+  background-color: fundament.$dark-grey
+  border: fundament.$border
+  border-radius: 50%
+  margin: -20px
+
+.active-initiative-marker 
+  display: flex
+  position: relative
+  align-items: center
+  justify-content: center
+  top: 21px
+  left: 20px
+  z-index: 3
+  height: 50px
+  width: 50px
+  background-color: fundament.$dark-grey
+  border: fundament.$border
+  border-radius: 50%
+  margin: -25px

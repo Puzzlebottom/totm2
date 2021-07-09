@@ -1,0 +1,52 @@
+@use 'fundament'
+
+.tool-button
+  display: flex
+  padding: 4px
+  overflow: hidden
+  white-space: nowrap
+  margin: 8px
+  justify-content: center
+
+.popup-tabs-wrapper
+  display: flex
+  position: relative
+  flex-direction: row
+  justify-content: space-between
+  height: fit-content
+  width: available
+  margin: 8px 8px 0 8px
+
+.popup-tab-unselected
+  display: flex
+  position: relative
+  z-index: 1
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  border-top-right-radius: 8px
+  background-color: fundament.$light-grey
+  border: fundament.$border
+  border-bottom: none
+  padding: 2px 8px 2px 4px
+  width: 32%
+  margin: 0
+
+.popup-tab-unselected:hover
+  background-color: fundament.$grey
+
+.popup-tab-selected
+  display: flex
+  position: relative
+  z-index: 3
+  justify-content: center
+  align-items: center
+  border-top-right-radius: 8px
+  background-color: fundament.$lighter-grey
+  border-top: fundament.$border
+  border-right: fundament.$border
+  border-left: fundament.$border
+  border-bottom: none
+  padding: 2px 8px 2px 4px
+  width: 32%
+  margin: 0
